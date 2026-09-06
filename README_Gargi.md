@@ -1,7 +1,7 @@
 <h1 align="center">Hey, I'm Gargi Gore 👋</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=2E9EF7&center=true&vCenter=true&width=650&lines=Senior+Software+Engineer+%40+Dell+Technologies;Automating+Distributed+Storage+Systems+at+Scale;3x+Hackathon+Winner+in+AI+%2F+RAG;60%25+Faster+Test+Cycles%2C+Zero+Manual+Grind" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=2E9EF7&center=true&vCenter=true&width=650&lines=Software+Engineer+%40+Automating+Distributed+Storage+Systems+at+Scale;3x+Hackathon+Winner+in+AI+%2F+RAG;60%25+Faster+Test+Cycles%2C+Zero+Manual+Grind" alt="Typing SVG" />
 </p>
 
 <p align="center">
