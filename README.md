@@ -1,139 +1,83 @@
-<h1 align="center">Hey, I'm Gargi Gore 👋</h1>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:203A43,100:2C5364&height=170&section=header&text=Gargi%20Gore&fontSize=46&fontColor=ffffff&fontAlignY=36&desc=Data%20Engineer%20%7C%20Scalable%20pipelines%20on%20distributed%20systems&descSize=16&descAlignY=58" width="100%"/> <p align="center"> <a href="https://www.linkedin.com/in/gargi-gore"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a> <a href="mailto:goregargi25@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a> <img src="https://img.shields.io/badge/New%20York%2C%20NY-2C5364?style=for-the-badge&logo=googlemaps&logoColor=white"/> <img src="https://img.shields.io/badge/Open%20to-Data%20Engineering%20roles-2ea44f?style=for-the-badge"/> </p>
+About Me
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=2E9EF7&center=true&vCenter=true&width=650&lines=Software+Engineer+turned+Data+Engineer;Automation+%26+Testing+Background+in+Storage+Systems;3x+Hackathon+Winner+in+AI+%2F+RAG;Building+Reliable+Pipelines+at+Scale" alt="Typing SVG" />
-</p>
+Software Engineer with 4+ years at Dell Technologies, where I built Python automation and CI/CD workflows for enterprise distributed storage platforms (PowerStore, PowerFlex) using Jenkins, Docker and Kubernetes.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/📍-New%20York%2C%20NY-2E9EF7?style=flat-square"/>
-  <img src="https://img.shields.io/badge/🎓-MS%20Data%20Science%20%40%20CCNY-2E9EF7?style=flat-square"/>
-  <img src="https://img.shields.io/badge/💼-4%2B%20yrs%20Software%20%26%20Data%20Engineering-2E9EF7?style=flat-square"/>
-</p>
+I am now focused on data engineering: designing batch and streaming pipelines with PySpark, orchestrating workflows, and deploying data infrastructure that is scalable, reliable and easy to maintain. I hold an M.Tech in Big Data Analytics and am pursuing an MS in Data Science & Engineering at CCNY.
 
----
+🎓 MS in Data Science & Engineering at The City College of New York
+🧠 M.Tech in CSE with a Big Data Analytics specialization (Hadoop, Hive, Spark)
+🏆 Hackathon awards in AI in 2023, 2025 and 2026
+🌱 Currently building with Airflow, dbt, Kafka and Terraform
+How I Build Pipelines
+SourcesAPIs · files · streams
+IngestPython · Kafka
+Raw layerobject storage
+TransformPySpark · dbt
+Analytics layerwarehouse
+Dashboardsand consumers
+OrchestrationAirflow
+CI/CDGitHub Actions · Docker
 
-### 👩‍💻 About Me
+My rules for a pipeline:
 
-I'm a Software Engineer moving into Data Engineering, with a background in automation and backend testing for large scale distributed storage systems. Four plus years of writing Python frameworks that validate enterprise NAS platforms taught me how to build for reliability at scale. Now I bring that same discipline to data pipelines: ETL workflows, large scale processing with PySpark, and systems that need to be correct the first time.
+Scalable. Partitioned storage and distributed processing that grow with the data.
+Reproducible. One docker compose up brings everything up locally.
+Idempotent. Re-running a job never duplicates or corrupts data.
+Observable. When something fails, the logs and lineage show where and why.
+Featured Projects
+<table> <tr> <td width="50%" valign="top">
+📈 realtime-market-data-pipeline
 
-```text
-if pipeline_fails and not root_cause_found():
-    trace_lineage()
-    fix_upstream()
-    ship_clean_data()
-```
+Streaming pipeline that ingests live crypto trade data from exchange WebSockets, processes it with Spark Structured Streaming, and computes real-time metrics such as VWAP, volatility and volume spikes. Handles late and malformed events with watermarking and a dead-letter queue, and serves results to a live Grafana dashboard.
 
----
+Kafka Spark Structured Streaming TimescaleDB Grafana Docker
 
-### 🏆 Hackathon Track Record
+</td> <td width="50%" valign="top">
+🏦 sec-financials-lakehouse
 
-| Year | Category | Project |
-|---|---|---|
-| 🥇 2026 | AI | Multi agent AI orchestration framework for full lifecycle automation |
-| 🥇 2025 | AI | AI in automation testing using RAG |
-| 🥇 2023 | Best Innovative Idea (AI) | AI automated summarization model |
+Batch lakehouse built on SEC EDGAR filings for thousands of US public companies. Ingests raw XBRL financial data into bronze, silver and gold Delta Lake layers, models company fundamentals (revenue, margins, growth) with dbt, and runs incrementally on a daily Airflow schedule.
 
-Three years running. Not a fluke, a pattern.
+Airflow PySpark Delta Lake dbt AWS S3
 
----
+</td> </tr> </table>
 
-### 📈 Impact by the Numbers
+<sub>🚧 Actively building. Each repo includes an architecture diagram, one-command setup and performance results.</sub>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Scripts%20Built-50%2B-success?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Execution%20Time%20Cut-60%25-success?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Domain-Distributed%20Storage%20%26%20Big%20Data-informational?style=for-the-badge"/>
-</p>
+Tech Stack
 
----
+Languages & Data
 
-### 🛠️ Tech Stack
+<p> <img src="https://skillicons.dev/icons?i=python,postgres,mongodb,mysql&theme=dark" /> <img src="https://img.shields.io/badge/PySpark-E25A1C?style=flat-square&logo=apachespark&logoColor=white" /> <img src="https://img.shields.io/badge/Hadoop-66CCFF?style=flat-square&logo=apachehadoop&logoColor=black" /> <img src="https://img.shields.io/badge/Hive-FDEE21?style=flat-square&logo=apachehive&logoColor=black" /> <img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white" /> </p>
 
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/-SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
-![PySpark](https://img.shields.io/badge/-PySpark-E25A1C?style=flat-square&logo=apachespark&logoColor=white)
-![Hadoop](https://img.shields.io/badge/-Hadoop-66CCFF?style=flat-square&logo=apachehadoop&logoColor=white)
-![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/-Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
-![Jenkins](https://img.shields.io/badge/-Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white)
-![AWS](https://img.shields.io/badge/-AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white)
-![Azure](https://img.shields.io/badge/-Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
-![Flask](https://img.shields.io/badge/-Flask-000000?style=flat-square&logo=flask&logoColor=white)
-![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+Cloud, Infra & CI/CD
 
-<details>
-<summary><b>🔍 Full skill matrix, click to expand</b></summary>
-<br>
+<p> <img src="https://skillicons.dev/icons?i=aws,azure,docker,kubernetes,jenkins,githubactions,gitlab,linux&theme=dark" /> </p>
 
-| Category | Skills |
-|---|---|
-| **Languages** | Python, C, C++, SQL, NoSQL, Data Structures & Algorithms, OOP |
-| **Big Data & Data Engineering** | Apache Spark, PySpark, Hadoop, Hive, Pig, ETL Pipeline Development |
-| **Databases** | PostgreSQL, Microsoft SQL Server, MongoDB |
-| **Testing & APIs** | PyTest, RESTful APIs, Postman, Flask |
-| **DevOps & CI/CD** | Jenkins, GitLab CI, GitHub Actions, Azure DevOps, Docker, Kubernetes |
-| **Cloud & Storage** | AWS (EC2, Redshift), Azure, NAS, Distributed File Systems, NFS, SMB |
-| **AI/ML** | RAG, LLMs, Transformers, LangChain, LLaMA |
-| **OS** | Linux (Ubuntu, CentOS), Windows Server |
+APIs & Web
 
-</details>
+<p> <img src="https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white" /> <img src="https://img.shields.io/badge/REST%20APIs-009688?style=flat-square" /> <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white" /> </p>
 
----
+AI/ML
 
-### 📌 Featured Projects
+<p> <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white" /> <img src="https://img.shields.io/badge/LLaMA-0467DF?style=flat-square&logo=meta&logoColor=white" /> <img src="https://img.shields.io/badge/RAG-8A2BE2?style=flat-square" /> </p>
+Experience Highlights
 
-<details open>
-<summary><b>🤖 RAG Model, Test Script Generation</b></summary>
-<br>
+Dell Technologies, Software Engineer 2 · 2021 to 2026
 
-Integrated LLaMA 7B into a RAG framework to auto generate Python test scripts from plain text test steps. Ran comparative evaluation across open source LLMs to benchmark coherence and executability of generated code.
+Built and maintained 50+ Python automation scripts for distributed storage platforms, cutting execution time by 60% through scheduled nightly and per-release runs
+Designed automated workflows across REST APIs, Kubernetes and containerized infrastructure, integrated into Jenkins CI/CD
+Developed AI-driven automation agents (LLaMA, LangChain, RAG) that increased throughput and reduced manual effort
 
-`LLaMA 7B` `RAG` `Python` `LLM Evaluation`
-</details>
+Hackathon Awards (AI category)
 
-<details>
-<summary><b>📝 Meeting Summarization App</b></summary>
-<br>
-
-Flask Jinja web app powered by GPT 3 that summarizes Zoom transcripts and extracts action items. Built a review and edit interface for Scrum leads to send personalized summaries and to do lists. An end to end NLP pipeline for agile meeting intelligence.
-
-`GPT 3` `Flask` `NLP` `Human in the Loop`
-</details>
-
-<details>
-<summary><b>🧩 Multi Agent AI Orchestration Framework</b></summary>
-<br>
-
-2026 hackathon winning framework coordinating multiple AI agents for full lifecycle test automation, from task decomposition through execution and reporting.
-
-`Multi Agent Systems` `Automation` `Orchestration`
-</details>
-
-<details>
-<summary><b>⚙️ Distributed Storage Test Automation Suite</b></summary>
-<br>
-
-50+ Python scripts automating functional and regression testing across large scale distributed NAS platforms, running nightly and per release. Cut execution time by 60% while improving coverage and deployment readiness.
-
-`Python` `Kubernetes` `REST APIs` `CI/CD`
-</details>
-
----
-
-### 🎓 Education
-
-- 🎓 **MS, Data Science and Engineering** — The City College of New York (2026 to 2028)
-- 🎓 **M.Tech, CSE & Big Data Analytics** — Vellore Institute of Technology, GPA 8.63/10 (2020 to 2022)
-
-**Certifications:** Data Engineering (SQL, Python & Spark), Complete Python Programming Bootcamp, Introduction to SAN and NAS Storage, all via Udemy
-
----
-
-### 📫 Let's Connect
-
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](#)
-[![Email](https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:goregargi25@gmail.com)
-
-<p align="center"><i>📍 New York, NY. Always up for a conversation about data pipelines, storage systems, or the intersection of both.</i></p>
+Year	Project
+2026	Multi-agent AI orchestration framework for end-to-end automation
+2025	RAG-based AI automation framework
+2023	AI automated summarization model (Best Innovative Idea)
+GitHub Activity
+<p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=goregargi&show_icons=true&hide_border=true&theme=github_dark&count_private=true" height="160"/> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=goregargi&layout=compact&hide_border=true&theme=github_dark" height="160"/> </p>
+Education
+MS, Data Science and Engineering, The City College of New York · 2026 to 2027
+M.Tech, CSE & Big Data Analytics, Vellore Institute of Technology · 2022 · GPA 8.63/10
+<p align="center"><i>Always happy to talk about data pipelines, distributed systems, or where the two meet.</i></p> <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2C5364,50:203A43,100:0F2027&height=90&section=footer" width="100%"/>
