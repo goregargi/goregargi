@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:203A43,100:2C5364&height=170&section=header&text=Gargi%20Gore&fontSize=46&fontColor=ffffff&fontAlignY=36&desc=Data%20Engineer%20%7C%20Scalable%20pipelines%20on%20distributed%20systems&descSize=16&descAlignY=58" width="100%"/> <p align="center"> <a href="https://www.linkedin.com/in/gargi-gore"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a> <a href="mailto:goregargi25@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a> <img src="https://img.shields.io/badge/New%20York%2C%20NY-2C5364?style=for-the-badge&logo=googlemaps&logoColor=white"/> <img src="https://img.shields.io/badge/Open%20to-Data%20Engineering%20roles-2ea44f?style=for-the-badge"/> </p>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:203A43,100:2C5364&height=170&section=header&text=Gargi%20Gore&fontSize=46&fontColor=ffffff&fontAlignY=36&desc=Engineer%20%7C%20Always%20building%2C%20always%20learning&descSize=16&descAlignY=58" width="100%"/> <p align="center"> <a href="https://www.linkedin.com/in/gargi-gore"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a> <a href="mailto:goregargi25@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a> </p>
 About Me
 
 Software Engineer with 4+ years at Dell Technologies, where I built Python automation and CI/CD workflows for enterprise distributed storage platforms (PowerStore, PowerFlex) using Jenkins, Docker and Kubernetes.
@@ -25,24 +25,33 @@ Scalable. Partitioned storage and distributed processing that grow with the data
 Reproducible. One docker compose up brings everything up locally.
 Idempotent. Re-running a job never duplicates or corrupts data.
 Observable. When something fails, the logs and lineage show where and why.
-Featured Projects
-<table> <tr> <td width="50%" valign="top">
-📈 realtime-market-data-pipeline
+My Work
+📈 Real-Time Market Data Pipeline
 
-Streaming pipeline that ingests live crypto trade data from exchange WebSockets, processes it with Spark Structured Streaming, and computes real-time metrics such as VWAP, volatility and volume spikes. Handles late and malformed events with watermarking and a dead-letter queue, and serves results to a live Grafana dashboard.
+Streaming · Live   CI
 
-Kafka Spark Structured Streaming TimescaleDB Grafana Docker
+A streaming pipeline that ingests live crypto trades from the Coinbase WebSocket feed, processes them with Spark Structured Streaming, and serves real-time market metrics and pipeline health on a Grafana dashboard.
 
-</td> <td width="50%" valign="top">
-🏦 sec-financials-lakehouse
+<a href="https://github.com/goregargi/realtime-market-data-pipeline"><img src="https://raw.githubusercontent.com/goregargi/realtime-market-data-pipeline/main/docs/dashboard.png" width="100%" alt="Real-time market data dashboard"/></a>
 
-Batch lakehouse built on SEC EDGAR filings for thousands of US public companies. Ingests raw XBRL financial data into bronze, silver and gold Delta Lake layers, models company fundamentals (revenue, margins, growth) with dbt, and runs incrementally on a daily Airflow schedule.
+Ingestion: Python producer streams BTC, ETH and SOL trades into Kafka, with dead-letter routing for bad messages
+Processing: 1-minute OHLCV candles and VWAP using event-time windows and watermarks for late data
+Reliability: idempotent upserts and checkpointing, so the pipeline is safe to restart and replay
+Observability: data freshness, throughput and late-record counts on the same dashboard
+
+Kafka Spark Structured Streaming TimescaleDB Grafana Docker GitHub Actions
+
+👉 View the project
+
+🏦 SEC Financials Lakehouse
+
+Batch · In progress
+
+A batch lakehouse built on SEC EDGAR filings for thousands of US public companies. Raw XBRL financial data moves through bronze, silver and gold Delta Lake layers, dbt models company fundamentals (revenue, margins, growth), and Airflow runs it incrementally every day.
 
 Airflow PySpark Delta Lake dbt AWS S3
 
-</td> </tr> </table>
-
-<sub>🚧 Actively building. Each repo includes an architecture diagram, one-command setup and performance results.</sub>
+🚧 Coming soon
 
 Tech Stack
 
