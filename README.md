@@ -28,8 +28,6 @@ Observable. When something fails, the logs and lineage show where and why.
 My Work
 📈 Real-Time Market Data Pipeline
 
-Streaming · Live   CI
-
 A streaming pipeline that ingests live crypto trades from the Coinbase WebSocket feed, processes them with Spark Structured Streaming, and serves real-time market metrics and pipeline health on a Grafana dashboard.
 
 <a href="https://github.com/goregargi/realtime-market-data-pipeline"><img src="https://raw.githubusercontent.com/goregargi/realtime-market-data-pipeline/main/docs/dashboard.png" width="100%" alt="Real-time market data dashboard"/></a>
@@ -44,8 +42,6 @@ Kafka Spark Structured Streaming TimescaleDB Grafana Docker GitHub Actions
 👉 View the project
 
 🏦 SEC Financials Lakehouse
-
-Batch · In progress
 
 A batch lakehouse built on SEC EDGAR filings for thousands of US public companies. Raw XBRL financial data moves through bronze, silver and gold Delta Lake layers, dbt models company fundamentals (revenue, margins, growth), and Airflow runs it incrementally every day.
 
